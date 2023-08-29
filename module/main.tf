@@ -10,7 +10,7 @@ provider "azurerm" {
   client_secret = var.client_secret
 }
 
-resource "azurerm_management_group" "management_group" {
+resource "azurerm_management_group" "management_group_id" {
     display_name = var.display_name_management_group
     parent_management_group_id = var.parent_ID_management_group
 }
