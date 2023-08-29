@@ -1,4 +1,4 @@
-variable "display_name" {
+variable "display_name_management_group" {
     description = "management group name"
     default = "nash_management_group"
 
