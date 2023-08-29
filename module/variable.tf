@@ -4,27 +4,27 @@ variable "display_name" {
 
 }
 
-variable "parent_management_group_id" {
+variable "parent_ID_management_group" {
     description = "parent management group id"
     default = "/provider/Microsoft.Management/managementGroups/parent_name"
 
 }
 
-variable "azure_tenant_id" {
-    description = "service principal tenant_id"
+variable "tenant_id" {
+    description = "Azure tenant_id"
 
 }
 
-variable "azure_client_id" {
-    description = "service principal azure client_id"
+variable "client_id" {
+    description = "azure client_id"
 
 }
 
-variable "azure_client_secret" {
-    description "service principal client_secret"
+variable "client_secret" {
+    description "Azure client_secret"
 
 }
 
-variable "azure_subscription_id" {
-    description = "service principal subscription_id"
+variable "subscription_id" {
+    description = "azure subscription_id"
 }
