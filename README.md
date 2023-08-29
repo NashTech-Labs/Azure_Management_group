@@ -44,12 +44,12 @@ nano terraform.tfvars
 Add your desired inputs to the file in the following format:
 
 ```ruby
-azure_client_id = ""
-azure_client_secret = ""
-azure_subscription_id = ""
-azure_tenant_id = ""
-display_name = "nash-management-group"
-parent_management_group_id = "parent id of your management group" 
+client_id = ""
+client_secret = ""
+subscription_id = ""
+tenant_id = ""
+display_name_management_group = "nash-management-group"
+parent_ID_management_group = "parent id of your management group" 
 # example of parent id --> /provider/Microsoft.Management/managementGroups/managemnt group parent name
 ```
 Review the changes that Terraform will make to your Azure resources.
@@ -57,13 +57,9 @@ Review the changes that Terraform will make to your Azure resources.
 
 Initialize Terraform in the directory.
 
-```bash
-terraform init
-```
-```bash
-terraform plan 
-```
-```bash
-terraform apply 
 
-```
+terraform init
+
+terraform plan 
+
+terraform apply --auto-approve
